@@ -39,7 +39,7 @@ function App() {
               >
                 {title}
                 <button
-                  className="badge bg-primary rounded-pill"
+                  className="btn btn-primary"
                   onClick={() => handleDelete(index)}
                 >
                   Delete
