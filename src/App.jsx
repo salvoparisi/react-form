@@ -21,13 +21,14 @@ function App() {
     <>
       <div className="container">
         <h1>To Do List</h1>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='d-flex'>
           <input
+            className='form-control w-25 h-25'
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
-          <button type="submit" className='m-3 btn btn-primary'>invia</button>
+          <button type="submit" className='mx-3 mb-3 btn btn-primary'>invia</button>
         </form>
         <div>
           <ul className="list-group">
